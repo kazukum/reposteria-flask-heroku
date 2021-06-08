@@ -16,7 +16,7 @@ load_dotenv()
 # CONFIGURAR EL SWAGGER EN FLASK
 
 # Esta variable sirve para indicar en que ruta (endpoint) se encontrara la documentacion
-SWAGGER_URL = ""  #esta es la ruta para entrar a nuestra pajina lo puedes cambiar por /api/docs
+SWAGGER_URL = "/api/docs"  #esta es la ruta para entrar a nuestra pajina lo puedes cambiar por /api/docs
 API_URL = "/static/swagger.json"  # indicar la ubicacion del archivo json
 swagger_blueprint = get_swaggerui_blueprint(
     SWAGGER_URL,
